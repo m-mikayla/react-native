@@ -19,7 +19,7 @@ export default function Login() {
     // Implement your login logic here
     console.log("Username:", username);
     console.log("Password:", password);
-    navigate("Login");
+    navigate("Home");
     // Add your authentication logic, navigation, or API calls as needed
   };
 
