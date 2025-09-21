@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Get pool chemicals",
+    "assignee": "Jamie",
+    "dueDate": 1790022799,
+    "createdDate": 1758486799,
+    "timeAllowance": 15,
+    "completed": false,
+    "recurring": "weekly"
+  },
+  {
+    "name": "Fill water bottles",
+    "assignee": "Maybree",
+    "dueDate": 1790022799,
+    "createdDate": 1758486799,
+    "timeAllowance": 5,
+    "completed": false,
+    "recurring": "daily"
+  },
+  {
+    "name": "layout clothes",
+    "assignee": "Margo",
+    "dueDate": 1790022799,
+    "createdDate": 1758486799,
+    "timeAllowance": 10,
+    "completed": false,
+    "recurring": "daily"
+  },
+  {
+    "name": "Clean kitchen",
+    "assignee": "Mikayla",
+    "dueDate": 1790022799,
+    "createdDate": 1758486799,
+    "timeAllowance": 45,
+    "completed": false,
+    "recurring": "weekly"
+  },
+  {
+    "name": "Pass out napkins",
+    "assignee": "Maxine",
+    "dueDate": 1790022799,
+    "createdDate": 1758486799,
+    "timeAllowance": 5,
+    "completed": false,
+    "recurring": "daily"
+  }
+]
