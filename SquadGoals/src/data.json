@@ -15,7 +15,8 @@
     "createdDate": 1758486799,
     "timeAllowance": 5,
     "completed": false,
-    "recurring": "daily"
+    "recurring": "daily",
+    "assigneePicture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Eo_circle_purple_letter-m.svg/1024px-Eo_circle_purple_letter-m.svg.png?20200417170927"
   },
   {
     "name": "layout clothes",

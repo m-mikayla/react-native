@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
 
 import { Task } from "../../types/shared";
@@ -12,12 +12,13 @@ const toggleTask = (task: Task) => {
 };
 
 export default function TaskItem({ task }: TaskItemProps) {
+  const [isChecked, setIsChecked] = useState(false);
   return (
     <View style={styles.taskItem}>
       <View style={styles.taskLeft}>
         <TouchableOpacity
           style={[styles.checkbox, task.completed && styles.checkboxChecked]}
-          onPress={() => toggleTask(task)}
+          onPress={() => setIsChecked(!isChecked)}
         >
           {task.completed && <Text style={styles.checkmark}>✓</Text>}
         </TouchableOpacity>
