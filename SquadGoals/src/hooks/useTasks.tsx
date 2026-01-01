@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import data from "../data.json";
+import { data } from "../data";
 import { Recurring, Task } from "../types/shared";
 import uuid from "react-native-uuid";
 
