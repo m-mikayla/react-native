@@ -13,12 +13,17 @@ const toggleTask = (task: Task) => {
 
 export default function TaskItem({ task }: TaskItemProps) {
   const [isChecked, setIsChecked] = useState(false);
+  function handleCheckBox() {
+    setIsChecked(!isChecked);
+    task.completed = isChecked;
+    console.log(task.completed);
+  }
   return (
     <View style={styles.taskItem}>
       <View style={styles.taskLeft}>
         <TouchableOpacity
-          style={[styles.checkbox, task.completed && styles.checkboxChecked]}
-          onPress={() => setIsChecked(!isChecked)}
+          style={[styles.checkbox, !isChecked && styles.checkboxChecked]}
+          onPress={handleCheckBox}
         >
           {task.completed && <Text style={styles.checkmark}>✓</Text>}
         </TouchableOpacity>
@@ -60,6 +65,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   checkboxChecked: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    borderWidth: 2,
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: "#2563eb",
     borderColor: "#2563eb",
   },
